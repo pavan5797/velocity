@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tables</title>
+        <style>
+            body{
+                background-color: rgb(255, 255, 255);
+            }
+            h1{color: blue;}
+            table{color: brown; border-color: blueviolet;}
+        </style>
+       <!--<style>
+        body{background-color: bisque; color: blueviolet;}
+        th{background-color: brown; color: yellowgreen;}
+        td{background-color: tomato; color: steelblue;}
+    </style> -->
+    </head>
+    <body >
+        <h1>weather report</h1>
+        <hr>
+
+        <table border="1px" >       <!--border attribute for border around table-->
+            <thead >                             <!--thead-table heading-->
+                <tr >                            <!--tr - table row-->
+                    <th>city</th>               <!--th - table heading cell-->
+                    <th>rainfall</th>
+                    <th>max-temp</th>
+                    <th>min-temp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>hyderabad</td>          <!--td - table data cell-->
+                    <td>10mm</td>
+                    <td>38 C</td>
+                    <td>25 C</td>
+                </tr>
+                <tr>
+                    <td>bangolore</td>
+                    <td>8mm</td>
+                    <td>33 C</td>
+                    <td>24 C</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms practice</title>
+</head>
+<body>
+    <!-- forms with types of input elements-->
+    <form action="" method="">        
+          <!--form is used to send inputs to backend....action atribute is send data to other page-->
+          <!--The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").-->
+        <label>FNAME</label>
+        <input type="text" placeholder="Enter name" >
+        <br><br>
+
+        <label for="lname">LName</label>     
+        <input type="text" placeholder="enter name" id="name" name="lName">
+        
+        <!--above both are same except 2nd one is more specific-->
+        <!--here attribute 'for=name' is used to specify this label is for input id 'name' -->
+        <!--here name atribute is a type of key for input value-->
+        <br><br>
+
+        <label>age</label>
+        <input type="number" placeholder="age" name="age">
+        <br><br>
+
+        <label for="dob">DOB</label>
+        <input type="date" name="date of birth">
+        <br><br>
+
+        <label for="quantity">Quatinty</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10">
+        <br><br>
+
+        <label>gender</label>
+        <select name="gender" >
+            <option>Male</option>
+            <option>female</option>
+        </select>
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="enter email">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="search">Search for products</label>
+        <input type="search" name="search" id="search" placeholder="search products">
+        <br><br> 
+
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time">
+        <br><br>
+
+        <label for="interests">interests</label> 
+        <fieldset id="interests">       <!--to set separate field for checkboxes-->
+            <label><input type="checkbox" name="interests" value="sports" />sports</label>
+            <label><input type="checkbox" name="interests" value="currentaffairs" >current affairs</label>
+            <label><input type="checkbox" name="interests" value="studies">studies</label>
+        </fieldset>
+        <br><br>
+
+        <label for="status">Marrital status</label>   <!--radio working similar to select input-->
+        <fieldset id="status">       <!--to set separate field for radio-->
+            <label><input type="radio" name="status" value="single" />single</label>
+            <label><input type="radio" name="status" value="married" >married </label>
+            <label><input type="radio" name="status" value="divorced">divorced</label>
+        </fieldset>
+        <br><br>
+
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="30" rows="2"></textarea>
+        <br><br>
+
+        <input type="submit" value="submit">    <!--two ways of submit this and below-->
+        <button>submit</button>                 <!--best way to submit-->
+    </form>
+</body>
+</html>

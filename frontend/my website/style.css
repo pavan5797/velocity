@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+.wrapper {
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.logo {
+    width: 150px;
+    height: auto;
+    padding: 30px 80px;
+}
+.navbar ul {
+    float: right;
+    margin-right: 30px;
+}
+.navbar ul li {
+    list-style: none;  /* for list style that dots and numbers */
+    margin: 0 10px;
+    display: inline-block;
+    line-height: 100px;  /*as wrapper height is 100px*/
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar ul li a:hover {       /* type:hover{} is syntax */ 
+    background-color: brown;
+    border-radius: 8px;
+}
+body .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;   /* when cursor go on it nothing happens */
+}
+.center h1 {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 900px;
+}
+.center h2 {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 885px;
+    margin-top: 10px;
+}
+.center .buttons {
+    margin: 35px 280px;
+}
+.buttons button {
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffb3b3;
+    background-color: red;
+    border: 1px solid ;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: #cc0000;
+}
