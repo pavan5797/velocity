@@ -1,0 +1,38 @@
+.myclass{
+    background-color: brown;
+    color: aquamarine;
+    border-bottom-style: double;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+div{
+    text-align: center;
+    justify-content: right;
+}
+ol{
+    list-style-type: lower-greek;
+    list-style-position: inside;
+}
+p, ul, .myclass{
+    list-style-type: circle;
+    list-style-image: url("/img/img1.jpg");
+    float: right;
+    background-color: beige;
+    color: tomato;
+}
+ /*Class Selector*/
+ .myclass{
+    color: blue;
+}
+/*ID selector*/
+#myid{
+    color: cornflowerblue;
+}
+/*Type Selector*/
+p{
+    color: brown;
+}
+div{
+    background-color: antiquewhite;
+    color: yellowgreen;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*advanced selestors*/
+        /*attribute selector*/
+        [href] {
+            color: crimson;
+        }
+
+        /* combination of type and attribute selectors*/ /*as href can be used in diff tags*/
+        a[href] {
+            color: green;
+            text-decoration: none;
+        }
+
+        /*type + attribute + value match selector */
+        a[href="https://www.google.com"] {
+            text-decoration-style: double ;
+            font-size: 1.5em;
+        }
+
+        /* The universal selector is used as a wildcard character. It selects all the elements on the pages.*/
+        /*
+        * {  
+            color: green;  
+            font-size: 20px; 
+            }   
+        */
+    </style>
+</head>
+<body>
+    <h2>Advanced selectors</h2>
+    <a href="https://www.google.com">click here for google search</a>
+    <br><br>
+
+    <a href="https://www.google.com" target="_blank">click here for google search</a>
+    <br><br>
+
+    <a href="https://www.facebook.com">click here for facebook</a>
+    <br><br>
+
+    <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>  <!--span tag-->
+</body>
+</html>

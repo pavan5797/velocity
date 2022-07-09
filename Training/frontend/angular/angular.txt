@@ -1,0 +1,52 @@
+first install "node" and can check it by "node --version" in command prompt.
+
+npm is node package manager... node contain several packages such as typescript,angular etc, those packages can directly install through command prompt by typing "install typescript" this text also available in google. 
+
+we can check these versions by typing
+node --version
+npm --version
+tsc --version    // for typescript
+ng --version     // for angular version here ng means a'ng'ular
+
+
+
+How to create angular new app?
+run command 'ng new <nacme of the app>' in command prompt after going into certain folder we want.
+-> once the app is created, go to the application folder ie., cd <name of the app> and run command 'ng serve' to serve the app.
+-->The angular is by default served at 'http://localhost:4200' website in browser.
+--> in vs code for running the angular code we shoild type 'npm start' in terminal. 
+
+
+To create new component in angular type 'ng g c <component_name>' that means angular generate component <component_name>.
+
+
+
+
+
+
+
+
+
+
+
+
+ng --version
+mkdir angularproject
+cd angularproject
+ng new myproject
+yes
+css->enter
+(√ Packages installed successfully.)
+
+code .
+cd myproject
+ng serve
+(√ Compiled successfully.)
+
+npm install bootstrap
+ng add @angular/material
+yes
+yes
+yes
+ng build
+ng serve -o(project will open automatically)

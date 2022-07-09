@@ -1,0 +1,154 @@
+Data binding -> .ts file to .html file
+In  types they are - String Interpolation,Property binding.
+  name = 'pavan';
+  myname() {
+    return this.name;
+  }
+we can call this name or myname function in html file by mentioning them in a double curly brackets ie..{{name}} or {{ myname() }}  -->this is string interpolation in data binding
+
+
+  // property binding //
+  isDisabled : boolean = true;
+  // In .html file --> <button [Disabled] = "isDisabled"> Click me </button>
+ here [Disabled] is the property , if it is true button will be disabled.
+
+  // Event Binding --> .html file to .ts file
+  // In .html file -->  <button (click) ="SayHello()" > Click me </button>
+  SayHello() {
+    alert("hello");
+  }
+  // here (click) is the event ie. click on button...some of the events are click,mouseenter,mousedown,keyup,keydown,keypress,drag,drop,submit,scroll,focus,blur.
+
+  // Two way binding   //import  FormsModule in app.module.ts
+  // In html file -->  
+  //  <input [(ngModel)]="name" type="text">
+  //  {{name}}
+
+
+
+DIRECTIVES IN ANGULAR
+->Directives are instructions in the DOM
+->Components are also Directives with a templete
+->Apart from components, there are two types of Directives:
+    1.Structural Directives
+    2.Attribute Directives
+
+STRUCTURAL DERICTIVES:-
+-they are used in HTML design for simply adding or removing the elements
+-basic Structural derictives available are 
+    1.*ngIf
+    2.*ngFor
+    3.*ngSwitch
+
+*ngIf
+eg:-
+In .ts-
+export class AppComponent {
+		userLoggedIn: boolean = false;
+	}
+In .html file-
+<button *ngIf = "!userLoggedIn"> Login </button>
+<button *ngIf = "userLoggedIn"> Logout </button>
+
+*ngFor
+
+IN .ts file-
+export class AppComponent {
+	cars: Array<string> ["bmw","audi","lexus"];
+}
+
+In .html file-
+<ul>
+	<li *ngFor ="let car of cars>
+		{{ car }}
+	</li>
+</ul> 
+o/p:- *bmw
+	  *audi
+ 	  *lexux
+
+eg2:-
+In car.ts file-
+export class Car{
+	name:string;
+	speed:number;
+	color:string;
+  }
+
+IN AppComponent.ts file-
+export class AppComponent
+ {
+	cars: Array<Car> = [
+	{ name:"bmw",color:"red",speed:200},
+	{ name:"audi",color:"blue",speed:300},
+	{name:"lexus",color:"white",speed:100}]
+}
+
+In .html file-
+<div  style="background: cyan;padding: 10px; margin: 10px" *ngFor="let car of cars">
+	<h2>{{car.name}}</h2>
+	<p>{{car.color}}</p>
+	<p>{{car.speed}}</p>
+</div> 
+
+
+*ngSwitch
+In .ts file-
+public choose="";
+  setvalue(drp:any) {
+    this.choose=drp.target.value;
+  }
+
+IN .html file-
+   <select (change)="setvalue($event)">
+        <option value="">select</option>
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Lexus">Lexus</option>
+        <option value="Another">Another</option>
+    </select>
+    <div [ngSwitch]="choose">
+        <h3 *ngSwitchCase="'Audi'">Famous Brand</h3>
+        <h3 *ngSwitchCase="'BMW'">Awesome Brand</h3>
+        <h3 *ngSwitchCase="'Lexus'">not so Famous Brand</h3>
+        <h3 *ngSwitchDefault="'Another'">Default Brand</h3>
+    </div>
+
+ATTRIBUTE DIRECTIVES
+
+-Attribute Directives is a way to modify the appearance or behavior of an element or a component.
+-There are two built-in Attribute Directives -> *ngStyle,*ngClass
+
+In .ts file-
+export class AppComponent {
+colorFlag: boolean = true;
+	getColor(){
+		if(this.colorflag){
+			return "red";
+		}else{
+			return "blue";
+		}
+}
+
+In .html file-
+<h1 [ngStyle]="{color: getColor()}"> Hello Wolrd </h1>
+
+
+*ngClass
+In .html file-
+<h1 [ngClass]="{highlight: highlightElement()}"> Hello Wolrd </h1>
+
+In app.component.css file-
+.highlight{
+	color:red;
+	background-color: yellow;
+}
+
+In app.component.ts file-
+export class AppComponent {
+	toHighlight: boolean = true;
+	highlightElement(){
+		return this.toHighlight;
+	}
+}
+

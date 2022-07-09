@@ -1,0 +1,11 @@
+What is Database ?
+What is DBMS ?
+Examples of DBMS
+Application of DBMS
+Types of DBMS
+
+• Database is collection of data that is inter-related
+• DataBase Management System is used in various sectors like
+  railways, banking.
+• Examples of DBMS are MySql, MariaDb.
+• Different types of DBMS.-> relational,heirarchial, network, object orianted dbms.

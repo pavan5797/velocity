@@ -1,0 +1,57 @@
+HTML is a static and markup Language
+
+static code can't changed at runtime
+markup means tag based <mytag> opening tag 
+</mytag> closing 
+
+types-
+XML (extensible markup language
+HTML (Hypertext Markup Language
+YAML(Yet another markup Language
+
+HTML is not a programming language
+html is not a case sensitive language
+<HTML>
+<Html>
+<html>
+
+Page Design with HTML
+
+Any Text Editor (UTF-8 and ANSI standard)
+Notepad,
+Wordpad
+Notepad++
+BlueFish
+Visual Code 
+Eclipse
+InteliJ IDEA
+
+Create a table with 3 columns: id, name, age. Insert 3 rows with the following data.
+
+Id	Name	Age
+124	Adam	29
+101	Ria	24
+119	Alex	22
+
+Create an HTML page for great learning that should have a header.
+
+You have to include the following:
+
+• Icon of GL
+• Sign up button
+• Include 2 links: mentor profile and GitLab profile
+• Mentor file should direct you to a new HTML page where mentors with their LinkedIn ids are available.
+• Gitlab profile link will direct you to the same homepage but in a different tab.
+• Please keep the tab name and colors properly.
+
+Problem Statement:
+You are a Web developer at BuildYourWeb Inc. You have been assigned the task of creating the home page for ShowOnWheels. The home page should be based on the following guidelines:
+It should display the organization logo.
+It should display some text describing about the company in paragraphs.
+It should also display names of various US cities, where ShowOnWheels is currently operating, in a list. This list should unfold when a user clicks the Currently Operating in text.
+It should provide links to other pages, such as About Us, Contact Us, and Upcoming Movies.
+It should display the images of latest movies. 
+It should display a video clip showing the latest offers.
+It should link a style sheet.
+It should display the contact number so that users can call to enquire about any upcoming movie.
+Prerequisite: You need the ExternalStylesheet, images, and video folders, which contain the style sheet, images, and video clip required for performing this activity. In addition, you need the aboutus.html,
